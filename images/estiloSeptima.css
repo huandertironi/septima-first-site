@@ -1,0 +1,503 @@
+/* ----------------------------------------------
+	Template Name : Septima
+	Template Code : S-0025
+	Version : 1.0   
+	Author : Huander Tironi
+	Author URI : http://www.septima.com.br/       
+	Last Date Modified : October 04, 2010	
+ ------------------------------------------------ */
+ 
+/* ----------------------------------------------
+   HTML ELEMENTS
+------------------------------------------------- */ 
+
+/* Top Elements */
+* { margin: 0; padding: 0; outline: 0 }
+
+
+html { background: #010000 url(pattern.gif) repeat; }
+
+body {
+	font: 11px/165% 'Lucida Grande', Geneva, Verdana, Arial, Helvetica, sans-serif;
+	color: #5E5E5E;
+	margin: 0; 	padding: 0; 
+	text-align: center;
+}
+
+
+
+/* Links */
+a, a:visited {
+	text-decoration: none;
+	color: #BEBEBE;	
+}
+a:hover {
+	color: #fff;
+	border-bottom: 1px dotted #438800;
+}
+
+/* headers */
+h1, h2, h3 {
+	font-family: 'Trebuchet MS', Helvetica, Tahoma, Arial, Sans-serif;
+	color: #EE4000;
+}
+h1 {
+	font-size: 3.1em;	
+	letter-spacing: -2px;
+	padding: 15px 10px 5px 10px;	
+}
+h2 {
+	font-size: 2em;
+	color: #EE4000;
+	padding: 20px 10px 5px 10px;	
+}
+h3 {
+	font-size: 1.7em;	
+	font-weight: normal;
+	padding: 20px 10px 5px 10px;		
+}
+
+p, dl { padding: 10px; margin: 0; }
+
+p.pFotos {padding-left: 10px;}
+
+ul, ol {
+	margin: 0px 0px;
+	padding: 5px;
+}
+ul { list-style: none; }
+
+dt {
+  font-weight: bold;
+  color: #FAFAFA;
+}
+dd {
+  padding-left: 25px; 
+}
+
+/* images */
+img.imgFotos{
+	background: #1B1B1B;
+    border: 1px solid #1B1B1B;
+	padding: 6px;
+}
+
+img.float-right {
+	background: #1B1B1B;
+    border: 1px solid #1B1B1B;
+	padding: 6px;
+  	margin: 5px 0px 10px 10px;  
+}
+img.float-left {
+	padding: 0px;
+  	margin: 5px 10px 10px 0px;
+}
+img.imgIcone{
+	width:15px;
+	height:15px;
+}
+
+
+code {
+  	margin: 5px 0;
+  	padding: 15px;
+  	text-align: left;
+  	display: block;
+  	overflow: auto;  
+  	font: 500 1em/1.5em 'Lucida Console', 'Courier New', Monospace ;
+  	/* white-space: pre; */
+  	background: #070707;
+	border: 1px solid #111;   
+}
+acronym {
+  	cursor: help;
+  	border-bottom: 1px dotted #5B5B5B;
+}
+blockquote {
+	margin: 15px 10px;
+ 	padding: 10px 10px 10px 35px;  
+   background: #070707 url(quote.gif) no-repeat 10px 10px;
+	border: 1px solid #111; 
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 1.6em;
+	font-style: italic;
+	font-family: Georgia, 'Times New Roman', Times, serif;	
+	color: #808080;	
+}
+
+/* start - table */
+table {
+	margin: 15px 10px; 
+	border-collapse: collapse;			
+}
+th {
+	background: #000;
+	color: #FAFAFA;
+	height: 38px;
+	padding-left: 12px;
+	padding-right: 12px;	
+	text-align: left;
+	border-left: 1px solid #211E20;
+	border-right: 1px solid #211E20;
+	border-bottom: 1px solid #211E20; 
+	border-top: 1px solid #48780E;
+}
+tr {
+	color: #EAEAEA;
+	height: 34px;		
+}
+td {
+	padding-left: 12px;
+	padding-right: 12px;
+	border: 1px solid #111;	
+	background: #070707; 
+}
+/* end - table */
+
+
+/* form elements */
+#formContato {
+	margin: 1px 5px; 
+	padding: 1px 5px 5px 1px; 
+	background: #070707; 	
+	border: 1px solid #111;	
+}
+#formContato p {
+	border-bottom: 1px solid #101010;
+	padding: 12px 0 5px 0;	margin: 0;	
+}
+#formHome {
+	margin: 1px 0px; 
+	padding: 1px 5px 5px 1px; 
+	border: none;
+}
+label {
+	font-weight: bold;	
+	color: #FAFAFA;
+}
+input, select, textarea {
+	width: 98%;
+	margin: 5px 0;
+	padding: 5px;
+	font: normal 1em Verdana, Tahoma, sans-serif;
+	color: #6A6969;
+	background: #0C0C0C;  
+	border: 1px solid #1C1C1C;
+	scrollbar-arrow-color:#EEEEEE;
+	scrollbar-3dlight-color:#0C0C0C;
+	scrollbar-highlight-color:#000000;
+	scrollbar-face-color:#0C0C0C;
+	scrollbar-shadow-color:#000000;
+	scrollbar-darkshadow-color:#0C0C0C;
+	scrollbar-track-color:#fafafa;
+}
+option { padding-right: 0.5em; } 
+
+#name, #email, #message{
+	width: 480px;
+}
+input.button { 
+	font: bold 12px Arial, Verdana, Sans-serif; 
+	width: 60px;
+	height: 30px;
+	padding: 2px 3px; 
+	margin-top: 8px;
+	color: #6A6969;
+	background: #000;
+	border-width: 1px;
+  	border-style: solid;
+  	border-color: #1B1B1B;
+}
+
+
+/* ------------------------------------------
+   LAYOUT
+------------------------------------------- */ 
+#wrap {
+	background: url(bkgup.png) no-repeat center top;
+	width: 950px;	
+	margin: 0 auto;
+	text-align: left;		
+}
+#content-wrap {
+	background-color: #000;
+	clear: both;
+	width: 950px;	
+	float: left;	
+	padding-top: 15px;
+	padding-bottom: 50px;	
+}
+#main-wrap {
+	background-color: #000;
+	clear: both;
+	width: 610px;	
+	float: left;	
+	padding-top: 0px;
+	padding-bottom: 50px;
+}
+
+#header {
+	position: relative;
+	width: 950px;	
+	height: 370px;	
+	margin: 0; padding: 0;			
+}
+#header h1#logo-text a {
+	position: absolute;
+	margin: 0; padding: 0;
+	font: bold 65px 'Trebuchet MS', Tahoma, Helvetica, Arial, Sans-serif;
+	letter-spacing: -1.5px;
+	color: #F8F8F8;
+	text-decoration: none;
+	text-transform: none;
+		
+	/* change the values of top and left to adjust the position of the logo*/
+	top: 125px; left: 25px;	
+}
+#header h1#logo-text a:hover {
+	background: none;	border: none;
+}
+#header p#intro {
+	position: absolute;
+	margin: 0; padding: 0;
+	font-family: 'Trebuchet MS', Tahoma, Helvetica, Arial, Sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.5em;
+	font-style: normal;
+	text-transform: none;
+	color: #999;
+	width: 400px;
+	
+	/* change the values of top and left to adjust the position */
+	top: 205px; left: 30px;		
+}
+
+/*  Navigation  */
+#nav {
+	position: absolute;
+	margin: 0; padding: 0;		
+	height: 50px;
+	left: 10px;	top: 30px;			
+}
+#nav ul {
+	float: left;
+	list-style: none;
+	height: 50px;
+	margin: 0 0 0 5px; padding: 0;	
+	display: inline;
+}
+#nav ul li {
+	display: inline;
+	margin: 0; padding: 0;
+}
+#nav ul li a {
+	float: left;
+	margin: 0;	padding: 0 12px;
+	font: bold 15px/50px 'Trebuchet MS', Helvetica, Arial, Geneva, sans-serif;
+	text-decoration: none;	
+	color: #EE4000;	
+	text-transform: uppercase;
+}
+#nav ul li a:hover, 
+#nav ul li a:active {
+	color: #8B2500;
+	background: none;
+	border: none;
+}
+#nav ul li#current a {	
+	color: #45D5E6;
+}
+
+/* Main Column */
+#main {
+	background: #010000;
+	float: left;
+	width: 610px;
+	padding: 0; margin: 0 0 0 10px;
+	display: inline;		
+}
+
+#main h2 {
+	padding: 5px 12px;
+	margin: 15px 5px 10px 5px;
+	font: bold 2.4em 'Trebuchet MS', Helvetica, Arial, sans-serif;				
+	color: #45D5E6;
+	border-bottom: 1px solid #121212; 
+	background-image: url(pattern.gif);	
+}
+#main h2 a {
+	color: #EE4000;
+	text-decoration: none;		
+	border: none;		
+}
+
+#main h3 {
+	color: #fafafa;
+}
+#main ul li {
+	list-style: none;
+	padding-left: 30px;
+	
+}
+
+/* Sidebar */	
+#sidebar {
+	background: #010000;
+	float: right;
+	width: 300px;
+	padding: 0; margin: 0px 18px 0 0;		
+	display: inline;	
+}	
+#sidebar h3 {
+	padding: 5px 12px;
+	margin: 15px 5px 10px 0;
+	font: bold 2.4em 'Trebuchet MS', Tahoma, Helvetica, Arial, sans-serif;				
+	color: #EE4000;
+	border-bottom: 1px solid #121212; 
+	background-image: url(pattern.gif);		
+}
+
+#sidebar ul.sidemenu {
+	text-align: left;
+	margin: 20px 5px 20px 0px; 
+	padding: 0;		
+	border-top: 1px solid #111;		
+}
+#sidebar ul.sidemenu li {
+	list-style: none;
+	padding: 8px 10px;
+	margin: 0;		
+	border-bottom: 1px solid #111;
+}
+* html body #sidebar ul.sidemenu li {
+	height: 1%;
+}
+#sidebar ul.sidemenu li a {
+	text-decoration: none;	
+	border: none;
+	color: #666666;
+	font-weight: bold;		
+	font-family: 'Trebuchet MS', Tahoma, Helvetica, Arial, Sans-serif;
+	font-size: 14px;		
+}
+#sidebar ul.sidemenu li a span {
+	color: #444;	
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: italic;
+	font-weight: normal;	
+	font-size: 11px;
+}
+#sidebar ul.sidemenu li a:hover,
+#sidebar ul.sidemenu li a:hover span {	
+	color: #fff;	
+}
+#sidebar ul.sidemenu ul { margin: 0 0 0 5px; padding: 0; }
+#sidebar ul.sidemenu ul li { border: none; }
+
+#rodape{
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+/* footer */
+#footer {
+	position: fixed;
+	bottom: 0px;
+	clear: both;
+	padding: 1em 0 1em 0;
+	background: #010000;
+	color: #EE4000;
+	width: 950px;
+	height: 15px;
+	border-bottom: 1px solid #010000;
+	
+}
+#footer a {	
+	color: #EE4000;
+	border: none;
+}
+#footer a:hover {
+	color: #fafafa;
+}
+#footer-left {
+	padding-left: 10px;
+	float: left;
+	width: 40%;
+}
+#footer-right {
+	padding-right: 10px;
+	float: right;
+	width: 30%;
+}
+
+/* postmeta */
+.postmeta {	
+	padding: 7px 5px; margin: 20px 10px 30px 10px;	
+	font-size: 1em;	
+	color: #545454;
+	border: 1px solid #111; 
+	background: #070707; 
+}
+.postmeta .date{ margin: 0 10px 0 5px;	}
+.postmeta a.comments { margin: 0 10px 0 5px;	}
+.postmeta a.readmore { margin: 0 10px 0 5px;	}
+
+.post-info { font-size: .95em; padding-top: 3px; margin-left: 5px; color: #444;	}
+.post-info a, .post-info a:visited { color: #fafafa; }
+
+/* alignment classes */
+.float-left  { float: left; }
+.float-right { float: right; }
+.align-left  { text-align: left; }
+.align-right { text-align: right; }
+
+/* display and additional classes */
+.no-border { border: none; }
+.clearer { clear: both; }
+.clear {	display:inline-block; }
+.clear:after {
+	display:block; 
+	visibility:hidden; 
+	clear:both; 
+	height:0; 
+	content: "."; 
+}
+
+/*div´s*/
+.listaVideos{
+	scrollbar-arrow-color:#EEEEEE;
+	scrollbar-3dlight-color:#0C0C0C;
+	scrollbar-highlight-color:#000000;
+	scrollbar-face-color:#0C0C0C;
+	scrollbar-shadow-color:#000000;
+	scrollbar-darkshadow-color:#0C0C0C;
+	scrollbar-track-color:#fafafa;
+	text-align:center;
+	padding: 3px;
+	no-repeat left top;
+	overflow: auto;
+	position: relative;
+	width: 100%;
+	opacity: 0.5;
+}
+.listaAlbuns{
+	scrollbar-arrow-color:#EEEEEE;
+	scrollbar-3dlight-color:#0C0C0C;
+	scrollbar-highlight-color:#000000;
+	scrollbar-face-color:#0C0C0C;
+	scrollbar-shadow-color:#000000;
+	scrollbar-darkshadow-color:#0C0C0C;
+	scrollbar-track-color:#fafafa;
+	float: left;
+	text-align:center;
+	padding: 3px;
+	no-repeat left top;
+	overflow: auto;
+	position: relative;
+	height: 500px;
+	width: 150px;
+	opacity: 0.5;
+}

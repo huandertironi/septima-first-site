@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<head>
+
+<title>..:: BS - SEPTIMA ::.. </title>
+
+<link rel="stylesheet" href="images/estiloSeptima.css" type="text/css" />
+<script src="js/jquery-1.4.2.min.js"></script>
+</head>
+
+<body>
+			
+		<div id="main">
+			
+			<h2><a href="base.html">Release</a></h2>
+			
+			<h3>Integrantes</h3>			
+			<ul class="sidemenu">
+				<li><a href="JavaScript:callRelease('Huander')"><img class="imgIcone" src="images/icones/IconeMicrofone.png" alt="Vocal" /> Huander Tironi</a></li>
+				<li><a href="JavaScript:callRelease('Hugo')"><img class="imgIcone" src="images/icones/IconeGuitarra.png" alt="Baixo" /> Hugo Camillo</a></li>
+				<li><a href="JavaScript:callRelease('RenanC')"><img class="imgIcone" src="images/icones/IconeBateria.png" alt="Bateria" /> Renan Campanuci </a></li>
+				<li><a href="JavaScript:callRelease('RenanS')"><img class="imgIcone" src="images/icones/IconeGuitarra.png" alt="Guitarra" /> Renan Salvador </a></li>
+				<li><a href="JavaScript:callRelease('Septima')"><img class="imgIcone" src="images/Septima.jpg" alt="Septima"/> Septima </a></li>
+			</ul>
+			
+			
+			<div id="divRelease">
+			
+			<script>
+				var value = "Septima";
+				function callRelease(integrante){
+					if(integrante != null){
+						value = integrante;
+					}else{
+						value = "Septima";
+					}
+				$("#divRelease").load("releases/release"+value+".html", function(response, status, xhr) {
+				
+				if (status == "error") {
+					var msg = "Servidor feio! Você não pode fazer isso!";
+					$("#divRelease").html(msg + xhr.status + " " + xhr.statusText);
+					}
+				});
+				}			
+			</script>
+			
+			</div>
+			
+		<!-- main ends -->	
+		</div>
+		
+<script>
+	window.onload(callRelease("Septima"));
+</script>
+</body>
+</html>

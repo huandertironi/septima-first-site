@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<head>
+
+<title>..:: SSR - SEPTIMA SACRA ROCK ::.. </title>
+
+<link rel="stylesheet" href="images/estiloSeptima.css" type="text/css" />
+
+<script src="js/jquery-1.4.2.min.js"></script>
+
+</head>
+<body>
+
+<div id="main">
+	<div style="float:left; width: 20%;">
+		
+		<p>Todos os posts</p>
+		
+		<ul>
+			<li><a href="JavaScript:callPost('06-02-2011')" title="Pr&eacute; Lan&ccedil;amento THE FLANDERS">06/02/2011</a></li>
+			<li><a href="JavaScript:callPost('03-02-2011')" title="Pr&eacute; Lan&ccedil;amento THE FLANDERS">03/02/2011</a></li>
+			<li><a href="JavaScript:callPost('25-01-2011')" title="M&uacute;sica nova, Liberdade!">25/01/2011</a></li>
+			<li><a href="JavaScript:callPost('05-01-2011')" title="Ano novo, boas novas">05/01/2011</a></li>
+			<li><a href="JavaScript:callPost('21-12-2010')" title="Site finalmente online">21/12/2010</a></li>			
+		</ul>		
+	</div>
+	<div id="main-wrap-post" style="float:right; width:79%;">
+			<script>
+				var value = "home";
+				function callPost(post){
+					if(post != null){
+						value = post;
+					}else{
+						value = "home";
+					}
+				$("#main-wrap-post").load("posts/"+value+".html", function(response, status, xhr) {
+				
+				if (status == "error") {
+					var msg = "Servidor feio! Você não pode fazer isso!: ";
+					$("#main-wrap-post").html(msg + xhr.status + " " + xhr.statusText);
+					}
+				});
+				}			
+			</script>
+	</div>
+<!-- main ends here -->
+</div>
+</body>
+</html>

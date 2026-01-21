@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<head>
+
+<title>..:: BS - SEPTIMA ::.. </title>
+
+<link rel="stylesheet" href="images/estiloSeptima.css" type="text/css" />
+<script src="js/jquery-1.4.2.min.js"></script>
+</head>
+
+<body>
+
+	<div id="main">
+			
+			<a name="TemplateInfo"></a>
+			<h2><a href="base.html">Audio e Downloads</a></h2>
+			
+			<div class="listaAlbuns">
+				<a href="javascript:listarAudios('albuns/albumACura.html');"><img alt="A Cura" title="A Cura" src="imagensSPT/fotos/thumbs/fotoSeptima1.jpg" width="120" height="100"/></a>			
+			</div>
+			<div id="divAlbum">
+			
+			<script>
+				var value = "ACura";
+				function callRelease(album){
+					if(album != null){
+						value = album;
+					}else{
+						value = "ACura";
+					}
+				$("#divAlbum").load("albuns/album"+value+".html", function(response, status, xhr) {
+				
+				if (status == "error") {
+					var msg = "desculpe mas ta errado: ";
+					$("#divAlbum").html(msg + xhr.status + " " + xhr.statusText);
+					}
+				});
+				}			
+			</script>
+			
+			</div>
+						
+			
+		<!-- main ends -->	
+		</div>
+<script>
+	window.onload(callRelease("ACura"));
+</script>
+</body>
+</html>
